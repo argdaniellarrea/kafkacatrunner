@@ -21,4 +21,7 @@ Params:
 **-f --format** Format for the kafkacat against the source.
 **-jqq --jqQuery** Query where you can be filtering the results with jq.
 
+### Whats next:
+Ideally, I'm going to create a param to set the initial parameters as a config, that you can override with the previous params for more flexibility, and add better support for building jq queries.
+
 
