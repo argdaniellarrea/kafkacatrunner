@@ -1,13 +1,13 @@
 # kafkacatrunner
 
-###Installing:
+### Installing:
 First clone the repository, at the root folder of the project run: 
 
 `python3 setup.py clean develop`
 
 After this you should be ready to use it
 
-###Usage Example: 
+### Usage Example: 
 `kafkacatRunner -aps ./my-environment-config-file.conf -m jq -t myTopic -o 9999 -p 0`
 
 Params:
