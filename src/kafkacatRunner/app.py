@@ -55,7 +55,11 @@ def main():
     elif mode == "jq":
         #jq mode
         command += "-C -u "
-        command += "| jq '.'"
+        command += "| jq "
+        if not jqQuery:
+            command += jqQuery + " "
+        else:
+            command += " "
     print("Running command: " + command)
     os.system(command)
 
