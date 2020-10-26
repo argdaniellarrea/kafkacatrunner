@@ -48,6 +48,6 @@ Params:
 **-jqq --jqQuery** Query where you can be filtering the results with jq.
 
 ### Whats next:
-Ideally, I'm going to create a param to set the initial parameters as a config, that you can override with the previous params for more flexibility, and add better support for building jq queries.
+Next step would be to add a better support for jq querying things for filtering (and maping if needed), need to think how to design this part (it should receive a map of the model that is being queried, things like that)
 
 
