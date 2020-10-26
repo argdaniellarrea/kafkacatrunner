@@ -18,8 +18,8 @@ You can use config files too!
 Here is a little example of config.txt:
 ```
 mode=jq
-authPathSource=./ba-kafka-staging.conf
-topic=oi.receipt.analyzer
+authPathSource=./my-environment-config-file.conf
+topic=myTopic
 offset=2888060
 ```
 
