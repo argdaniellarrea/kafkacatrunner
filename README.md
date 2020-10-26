@@ -8,14 +8,16 @@ First clone the repository, at the root folder of the project run:
 After this you should be ready to use it
 
 ### Usage Examples: 
-Basic Usage
+Basic Usage:
 
 `kafkacatRunner -aps ./my-environment-config-file.conf -m jq -t myTopic -o 9999 -p 0`
 
-You can use config files too!
+You can use config files too!:
+
 `kafkacatRunner -c ./config.txt`
 
 Here is a little example of config.txt:
+
 ```
 mode=jq
 authPathSource=./my-environment-config-file.conf
