@@ -13,7 +13,7 @@ parser.add_argument('-f', '--format', type=str, help="Custom String format for k
 parser.add_argument('-o', '--offset', type=str, help="Offset for the source kafka topic", default="0")
 parser.add_argument('-jqq', '--jqQuery', type=str, help="jq query string for filtering topics messages", default="'.'")
 
-#Parse arguments and variables
+#Parse arguments and variuables
 args, unknown = parser.parse_known_args()
 
 #args
@@ -47,7 +47,7 @@ def main():
     if mode == "kc":
         #kafkacat consumer mode check get from local kafka topic
         command += "-C -J -u "
-    elif mode == "kdp":
+    elif mode == "krp":
         #kafkacat producer mode check feed from qa file
         command += "-C "
         command += "| kafkacat -P "

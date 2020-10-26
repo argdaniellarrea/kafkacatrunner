@@ -33,7 +33,7 @@ Params:
 
 **-c --config** Config file where you can put your arguments here too (yaml file or ini file), it will be override by the other args
 
-**-m --mode** Mode which the kafkacat will be used, right now they can be Consumer mode (kc), Producer mode (kp), or jq mode (jq), required.
+**-m --mode** Mode which the kafkacat will be used, right now they can be Consumer mode (kc), Relay mode (krp), or jq mode (jq), required.
 
 **-aps --authPathSource** Path to the file that you will be using with kafkacat against the source.
 
