@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 install_requires = [
-    'argparse==1.4.0'
+    'ConfigArgParse==1.2.3'
 ]
 
 dependency_links = [
