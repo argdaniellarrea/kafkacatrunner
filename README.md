@@ -7,8 +7,25 @@ First clone the repository, at the root folder of the project run:
 
 After this you should be ready to use it
 
-### Usage Example: 
+### Usage Examples: 
+Basic Usage
+
 `kafkacatRunner -aps ./my-environment-config-file.conf -m jq -t myTopic -o 9999 -p 0`
+
+You can use config files too!
+`kafkacatRunner -c ./config.txt`
+
+Here is a little example of config.txt:
+```
+mode=jq
+authPathSource=./ba-kafka-staging.conf
+topic=oi.receipt.analyzer
+offset=2888060
+```
+
+And if needed you can override a part of your config file:
+
+`kafkacatRunner -c ./config.txt -o 9999999999`
 
 Params:
 
