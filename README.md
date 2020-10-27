@@ -49,6 +49,18 @@ Params:
 
 **-jqq --jqQuery** Query where you can be filtering the results with jq.
 
+### Modes:
+There are right now 3 differents modes of use supported:
+
+#### kc consumer mode:
+This is the plain consumer mode, that will get from the source topic and print on screen.
+#### krp relay mode:
+This is for feeding your own (target) topic with actual data from the source, usefull when you need to test with other ambient data.
+#### jq mode:
+This is the same as kc consumer mode, but will add jq as stream, helpfull for querying and formating the JSON data.
+#### kp (still on develop):
+This is still on develop, it should send to a topic (target) an actual data, still need to define if it will be a json file, string, etc.
+
 ### Whats next:
 Next step would be to add a better support for jq querying things for filtering (and maping if needed), need to think how to design this part (it should receive a map of the model that is being queried, things like that)
 
