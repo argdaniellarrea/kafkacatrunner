@@ -58,6 +58,9 @@ This is the plain consumer mode, that will get from the source topic and print o
 This is for feeding your own (target) topic with actual data from the source, usefull when you need to test with other ambient data.
 #### jq mode:
 This is the same as kc consumer mode, but will add jq as stream, helpfull for querying and formating the JSON data.
+
+`kafkacatRunner -c ./config.txt -m jq -o 99999999 -t myTopic`
+
 #### kp (still on develop):
 This is still on develop, it should send to a topic (target) an actual data, still need to define if it will be a json file, string, etc.
 
