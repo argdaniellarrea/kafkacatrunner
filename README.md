@@ -61,6 +61,10 @@ This is the same as kc consumer mode, but will add jq as stream, helpfull for qu
 
 `kafkacatRunner -c ./config.txt -m jq -o 99999999 -t myTopic`
 
+##### An example with jqQuery (will improve the build of this):
+
+`kafkacatRunner -c ./config.txt -m jq -o 3097860 -t myTopic -p 0  -jqq "'(select(.myJsonField | contains(\"myJSONValue\")))'"`
+
 #### kp (still on develop):
 This is still on develop, it should send to a topic (target) an actual data, still need to define if it will be a json file, string, etc.
 
